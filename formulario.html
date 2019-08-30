@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formulários</title>
+</head>  
+<body>
+    <!--Tag form - usada para criar os formulários-->
+    <!--name= nomeia a página para que o servidor a reconheça-->
+    <!--action= define a ação que a página terá-->
+    <!--method= define o método de resposta da página (POST= envio e invisibilidade dos dados enviados-->
+    <form name="login"  
+          action="" 
+          method="POST">
+     <!--Tag label - usada para criar rótulos nos formulários-->
+     <!--Tag input - usada para criar um determinado campo-->
+     <!--type= define o tipo do caractere-->
+     <!--maxlength= define o máximo de caracteres a ser utilizado em um campo-->
+     <!--placeholder= define um campo padrão a ser preenchido sempre que não tiver contéudo no campo-->
+     <!--required= define que o campo é obrigatório-->
+        <label>Nome do Usuário:</label><br/>
+        <input type="text" 
+               maxlength="15"
+               placeholder="Digite"
+               name="user"
+               required/><br/>
+        <label>Senha:</label><br/>
+        <input type="password" 
+               maxlength="8"
+               name="senha"/><br/>
+
+    <!--tag select - Usada para criar um check em lista-->
+    <!--tag option - Usada para criar as opções da lista-->       
+    <!--value= define o valor a ser inserido no campo-->
+        <select name="Estado">
+            <option value="SP">São Paulo </option>
+            <option value="RJ">Rio de Janeiro </option>
+            <option value="MG">Minas Gerais </option>
+        </select></br>
+
+    <!--tag textarea - Usada para criar um campo de observação-->
+        <textarea>
+        </textarea></br>
+
+    <!--type checkbox= cria itens para inserir com flag para selecionar várias opções-->
+    <input type="checkbox" value="SP">São Paulo</br>
+    <input type="checkbox" value="RJ">Rio de Janeiro</br>
+    <input type="checkbox" value="MG">Minas Gerais</br>
+
+    <!--type radio= cria itens para inserir com flag selecionando apenas uma opção-->
+    <input type="radio" value="SP" name="Estado">São Paulo</br>
+    <input type="radio" value="RJ" name="Estado">Rio de Janeiro</br>
+    <input type="radio" value="MG" name="Estado">Minas Gerais</br>
+
+    <!--type submit= cria o botão a ser acionado-->    
+        <input type="submit"
+               value="Ok"/>
+
+    <!--type reset= reseta o texto do campo-->
+        <input type="reset" value="Limpar"/>
+    </form>
+</body>
+</html>
